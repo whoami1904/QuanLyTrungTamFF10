@@ -1,0 +1,26 @@
+{
+  "name": "quanlytrungtam",
+  "version": "1.0.0",
+  "description": "Quan Ly Trung Tam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
+    "@icon/foundation-icons": "^3.0.0-2",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "foundation": "^4.2.1-1",
+    "foundation-icons": "^1.0.1",
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp-sass": "^4.0.1"
+  }
+}

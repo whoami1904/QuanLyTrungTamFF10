@@ -1,0 +1,41 @@
+.content-page{
+    .main-content{
+        .statistics{
+            background: $color-white;
+            .widget-header{
+                padding: $pd-12;
+                .statistics-title{
+                    @include text($fs-2, $color-text-1);
+                    font-weight: $font-weight-400;
+                }
+                .additional-btn{
+                    a{
+                        @include text($fs-2, $color-text-1);
+                        padding: 0px $pd-4;
+                    }
+                }
+            }
+            #widget-content{
+                .btn-group{
+                    padding: 0px 0px $pd-12 $pd-10;
+                    .btn{
+                        @include button($color-white, $background-grey-1, $pd-4, $color-white, $background-grey-2);                          
+                    }
+                    .active{
+                        background: $background-grey-2;
+                    }
+                    .fa-cog{
+                        padding: 0px $pd-4;
+                        font-size: $fs-2;                   
+                    }                  
+                }
+                .cog{
+                    background: $background-dark-1 !important;
+                }
+                .pull-right{
+                    padding-right: $pd-10;
+                }
+            }
+        }
+    }
+}

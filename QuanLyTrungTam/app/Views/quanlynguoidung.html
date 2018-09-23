@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin - Quản Lý Người Dùng</title>
+    <link rel="stylesheet" href="../../asset/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asset/css/font-awesome.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../asset/css/foundation-icons.css"> -->
+    <link rel="stylesheet" href="../../asset/css/main.css">
+</head>
+<body>
+    <!--BEGIN-->
+    <div class="wrapper">
+        <!--TOPBAR-->
+        <div id="topbar">
+            <div class="topbar-left">
+                <div class="logo">
+                    <h1>
+                        <a href="#">
+                            <img src="../../asset/img/logo.PNG" alt="logo">
+                        </a>
+                    </h1>
+                </div>
+                <button class="open-left">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <!--END TOPBAR-LEFT-->
+            <div class="navbar navbar-expand-sm d-flex justify-content-between align-items-center"> <!--d-flex để đẩy 2 div về 2 phía-->
+                <div class="navbar-info d-sm-none d-md-block">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link nav-tool" data-toggle="dropdown">
+                                <i class="fi-thumbnails"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item language_bar dropdown hidden-xs">
+                            <a href="#" class="nav-link nav-lang" data-toggle="dropdown">English (US)
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="#">German</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Italian</a></li>
+                                <li><a href="#">Spanish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--END NAVBAR-INFO-->
+                <div class="navbar-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-globe"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fa fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item profile">
+                            <a href="#" class="nav-link" data-toggle="dropdown">
+                                <span class="rounded-image topbar-profile-image">
+                                    <img src="../../asset/img/user-35.jpg">
+                                </span> Jane <strong>Doe</strong>
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--END TOPBAR-->
+        <!--SIDEBAR-LEFT-->
+        <div id="sidebar-left">
+            <div class="sidebar-inner">
+                <div class="form-group">
+                    <input type="text" name="search" class="form-control" placeholder="Search">
+                    <button type="submit" class="btn search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <!--PROFILE-->
+                <div class="profile-info">
+                    <div class="row">
+                        <div class="col-xs-4 avatar">
+                            <a href="#" class="rounded-image profile-imge">
+                                <img src="../../asset/img/user-100.jpg" alt="profile" class="profile-imge">
+                            </a>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="profile-text">
+                                <p class="profile-title">Welcome <b class="profile-name">Jane</b></p>
+                            </div>
+                            <div class="profile-button">
+                                <ul class="navbar-nav navbar-expand-sm justify-content-around profile-email">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fa fa-comments"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fa fa-power-off"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END PROFILE-->
+                <hr class="divider">
+
+                <!--SIDEBAR-MENU-->
+                <div id="sidebar-menu">
+                    <ul class="">
+                        <li class="dashboard">
+                            <a href="#" class="nav-link active">
+                                <i class="fa fa-tachometer"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="trainee">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-user"></i>
+                                <span>Trainee</span>
+                            </a>
+                        </li>
+                        <li class="trainee">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-university"></i>
+                                <span>Lecturer</span>
+                            </a>
+                        </li>
+                        <li class="course">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-graduation-cap"></i>
+                                <span>Course</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--END SIDEBAR-MENU-->
+            </div>
+            <!--END SIDEBAR-INNER-->
+        </div>
+        <!--END SIDEBAR-LEFT-->
+
+        <!--CONTENT-PAGE-->
+        <div class="content-page">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="active">
+                    Dashboard
+                </li>
+            </ol>
+
+            <!--MAIN-CONTENT-->
+            <div class="main-content container-fuild">
+                <div class="row"> <!--BEGIN WIDGET-->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget lightblue-1">
+                            <div class="widget-content padding">
+                                <div class="text-box">
+                                    <p class="maindata">TOTAL <b>TRAINEE</b></p>
+                                    <h2>
+                                        <span class="animate-number" data-value="25153" data-duration="3000">25,153</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-caret-up rel-change"></i>
+                                        <b>39%</b> increase in traffic
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget green-1">
+                            <div class="widget-content padding">
+                                <div class="text-box">
+                                    <p class="maindata">TOTAL <b>LECTURER</b></p>
+                                    <h2>
+                                        <span class="animate-number" data-value="25153" data-duration="3000">25,153</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-caret-up rel-change"></i>
+                                        <b>39%</b> increase in traffic
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget orange-1">
+                            <div class="widget-content padding">
+                                <div class="text-box">
+                                    <p class="maindata">TOTAL <b>COURSE</b></p>
+                                    <h2>
+                                        <span class="animate-number" data-value="25153" data-duration="3000">25,153</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-caret-up rel-change"></i>
+                                        <b>39%</b> increase in traffic
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget darkblue-1">
+                            <div class="widget-content padding">
+                                <div class="text-box">
+                                    <p class="maindata">TOTAL <b>VISITORS</b></p>
+                                    <h2>
+                                        <span class="animate-number" data-value="25153" data-duration="3000">25,153</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fa fa-caret-up rel-change"></i>
+                                        <b>39%</b> increase in traffic
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!--END WIDGET--> 
+                <!--BEGIN STATISTICS-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="statistics">
+                            <div class="widget-header d-flex justify-content-between mt-4">
+                                <h2 class="statistics-title">
+                                    <i class="fa fa-area-chart"></i>
+                                    <strong>Website</strong> Statistics
+                                </h2>
+                                <div class="additional-btn">
+                                    <a href="#" class="reload">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a href="#" class="widget-maximize">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                    <a href="#" class="widget-toggle">
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <a href="#" class="widget-close">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div><!--END WIDGET-HEADER-->
+                            <!--BEGIN WIDGET-CONTENT-->
+                            <div id="widget-content" class="statistics-chart">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="toolbar">
+                                            <div class="pull-left">
+                                                <div class="btn-group">
+                                                    <a href="#" class="btn btn-default btn-xs">Daily</a>
+                                                    <a href="#" class="btn btn-default btn-xs active">Monthly</a>
+                                                    <a href="#" class="btn btn-default btn-xs">Yearly</a>
+                                                </div>
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="btn-group">
+                                                    <a href="#" class="btn btn-default btn-xs">
+                                                        Export <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="btn-group pl-1">
+                                                    <a href="#" class="btn btn-default btn-xs cog">
+                                                        <i class="fa fa-cog"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--BEGIN CHART-->
+                                        <div role="tabpanel" class="tab-pane fade" id="ThongKe">
+
+                                        </div>
+                                        <!--END CHART-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END WIDGET-CONTENT-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--END STATISTICS-->
+            </div>
+            <!--END MAIN_CONTENT-->
+
+        </div>
+        <!--END CONTENT-PAGE-->
+
+    </div>
+    <!--END-->
+    
+    <script type="text/javascript" src="../../asset/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/popper.min.js"></script>
+    <script type="text/javascript" src="../../asset/js/bootstrap.min.js"></script>
+    <!--HIGHT CHART JS-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <div class="container">
+             <div id="container"></div>
+    </div>
+    <script src="../Controllers/quanlynguoidung.js"></script>
+    <style>
+        #container {
+            min-width: 310px;
+            max-width: 800px;
+            height: 400px;
+            margin: 0 auto
+        }
+    </style>
+</body>
+</html>

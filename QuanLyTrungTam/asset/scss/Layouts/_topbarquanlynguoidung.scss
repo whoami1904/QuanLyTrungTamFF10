@@ -1,0 +1,88 @@
+#topbar{
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    .topbar-left{
+        float: left;
+        display: block; //inline de dua div navbar nam cung hang va block de sdung dc height width
+        width: 240px;
+        position: relative;
+        height: 100%;
+        background: $background-color-panel-left-1;
+        .logo{ 
+            width: 100%;
+            h1{
+                height: 50px;   
+                text-align: center;
+            }        
+            img{
+                // position: absolute;
+                height: 50%;
+                // top: 25%;
+                // left: 30%;
+            }
+        }
+        .open-left{
+            position: absolute;
+            right: 0;
+            float: left;
+            top: 0;
+            padding: $pd-6 + 1 $pd-15;
+            border: none;
+            background: transparent;
+            font-size: 21px;           
+            .fa{
+                color: $background-grey-3;
+            }
+        }
+    }
+    .navbar{ 
+        height: 50px;
+        padding: 0px 3% 0px 0px;
+        .navbar-info{
+            ul{
+                padding: unset;
+                margin: unset;
+                li{
+                    list-style: none;
+                    a{
+                       @include text($fs-2, $color-link);
+                       padding-top: $pd-20;
+                       padding: $pd-15;
+                        .fa{
+                            font-size: $fs-1;
+                        }
+                        i{
+                            font-size: $fs-1 * 2;
+                        }
+                    }
+                }
+                .language_bar{
+                    padding-top: 6px;
+                }
+            }
+        }
+        .navbar-right{
+            // padding-right: 5%;
+            ul{
+                padding: unset;
+                margin: unset;
+                li{
+                    list-style: none;
+                    a{
+                       @include text($fs-2, $color-link);
+                       padding-top: $pd-20;
+                       padding: $pd-15;
+                       i{
+                            font-size: $fs-3;
+                            padding: 15px 0px;
+                        }
+                        img{
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

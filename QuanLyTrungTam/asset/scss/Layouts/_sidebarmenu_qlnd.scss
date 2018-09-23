@@ -1,0 +1,35 @@
+#sidebar-left{
+    #sidebar-menu{
+        width: 100%;
+        ul{
+            margin: 0px;
+            padding: 0px;
+            li{
+                list-style: none;
+                display: block;
+                a{
+                    font-size: 1.2rem;
+                    color: $background-color;
+                    padding: $mg-10;
+                    // display: block;
+                    &:hover{
+                        background: $background-color-hover;
+                    }
+                    span, i{
+                        vertical-align: middle;
+                    }
+                    i{
+                        margin-left: $mg-5;
+                        margin-right: $mg-10;
+                        // text-align: center;
+                    }
+                }
+                .active{
+                    color: $color-text-hover;
+                    background: $background-color-active;
+                    font-weight: $font-weight-600;
+                }
+            }
+        }
+    }
+}

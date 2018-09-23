@@ -1,0 +1,74 @@
+/******************COLOR******************/
+/******************PADDING******************/
+/******************MARGIN******************/
+/******************FONT-SIZE******************/
+/******************FONT-WEIGHT******************/
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 12px; }
+
+div {
+  box-sizing: border-box; }
+
+.topbar {
+  left: 0px;
+  right: 0px; }
+  .topbar .topbar-left {
+    width: 295px;
+    position: relative;
+    height: 100%;
+    background: #3E4B53; }
+    .topbar .topbar-left .logo img {
+      position: absolute;
+      height: 25px;
+      float: right;
+      top: 25%;
+      left: 30%; }
+    .topbar .topbar-left .open-left {
+      position: absolute;
+      right: 7%;
+      top: 15%;
+      border: unset;
+      background: unset;
+      font-size: 21px; }
+      .topbar .topbar-left .open-left .fa {
+        color: #888888; }
+  .topbar .navbar {
+    width: 100%;
+    padding: unset; }
+    .topbar .navbar .navbar-info ul {
+      padding: unset;
+      margin: unset; }
+      .topbar .navbar .navbar-info ul li {
+        list-style: none; }
+        .topbar .navbar .navbar-info ul li a {
+          font-size: 1.3rem;
+          color: #777;
+          padding-top: 20px;
+          padding: 15px; }
+          .topbar .navbar .navbar-info ul li a .fa {
+            font-size: 1rem; }
+          .topbar .navbar .navbar-info ul li a i {
+            font-size: 2rem; }
+      .topbar .navbar .navbar-info ul .language_bar {
+        padding-top: 6px; }
+    .topbar .navbar .navbar-right ul {
+      padding: unset;
+      margin: unset; }
+      .topbar .navbar .navbar-right ul li {
+        list-style: none; }
+        .topbar .navbar .navbar-right ul li a {
+          font-size: 1.3rem;
+          color: #777;
+          padding-top: 20px;
+          padding: 15px; }
+          .topbar .navbar .navbar-right ul li a i {
+            font-size: 1.5rem;
+            padding: 15px 0px; }
+          .topbar .navbar .navbar-right ul li a img {
+            border-radius: 50%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+#sidebar-left{
+    width: 240px;
+    height: 100%;
+    background: $background-color-panel-left-1;
+    top: 50px;
+    display: inline-block;
+    overflow: hidden;
+    position: fixed; //fixed cố định sidebar-left để background có height theo chiều cao trang web và div content-page đưa lên
+    .sidebar-inner{
+        overflow: hidden;
+        height: 100%;
+        display: block;
+        .form-group{
+            position: relative;
+            width: 100%;           
+            .form-control, .btn{
+                border-radius: 0px;
+                font-size: $fs-2;
+                background: $background-color-panel-left-2;
+                border: 0px;
+            }
+            .search-button{
+                position: absolute;
+                top: 0px;
+                right: 5%;
+                background: transparent;
+                .fa{
+                    color: $color-link;
+                }
+            }
+        }
+    }
+}

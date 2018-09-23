@@ -1,0 +1,42 @@
+#sidebar-left{
+    .profile-info{
+        margin: 0px $mg-5 $mg-10 0px;
+        // padding: $pd-4;
+        .avatar{
+            margin-right: $mg-15;
+            .rounded-image{
+                display: inline-block;    
+                border: 4px double rgba(255,255,255,0.2);
+                overflow: hidden;  
+                border-radius: 100px;
+                width: 70px;
+                margin: 0px 0px 0px $mg-25;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .profile-text{
+            color: $color-white;
+            font-size: $fs-4;
+        }
+        i{
+            color: $color-white;
+            font-size: $fs-3;
+        }
+        .profile-button{
+            margin-top: $mg-5 * (-1);
+            .fa-power-off{
+                color: $color-logout;
+            }
+        }
+    }
+    hr{
+        border-color: rgba(255,255,255,0.1);
+        width: 90%;
+        margin: 10px 5%;
+        margin-top: 0px;
+        display: block;
+        clear: both;
+    }
+}

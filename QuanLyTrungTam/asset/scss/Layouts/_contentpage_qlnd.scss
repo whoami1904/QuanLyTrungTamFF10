@@ -1,0 +1,60 @@
+.content-page{
+    margin-left: 240px;
+    overflow: hidden;
+    position: relative;
+    background-color: $background-color;
+    .breadcrumb{
+        padding-top: unset;
+        padding-bottom: unset;
+        margin-bottom: unset;
+        background: rgba(0,0,0,0.05);
+        line-height: 30px;
+        li{
+            margin-left: $mg-5;
+            a{
+                color: $color-text;
+            }
+        }
+        .active{
+            color: $color-text-active;
+            margin-left: $mg-20;
+        }
+    }
+    .main-content{
+        padding: $pd-20;
+        .widget{
+            .padding{
+                padding: $pd-15;
+                .text-box{
+                    @include text($fs-1, $color-white);
+                    h2{
+                        font-size: 34px;;
+                        font-weight: $font-weight-300;
+                    }
+                }
+            }
+            .widget-footer{
+                background: rgba(0,0,0,0.1);
+                @include text($fs-1, $color-white);
+                padding: $pd-4 $pd-15;
+                font-weight: $font-weight-600;
+                i{
+                    font-size: $fs-2;
+                    padding-right: $pd-6;
+                }
+            }
+        }
+        .lightblue-1{
+            background-color: $background-grey-1;
+        }
+        .green-1{
+            background-color: $background-green-1;
+        }
+        .orange-1{
+            background-color: $background-orange-1;
+        }
+        .darkblue-1{
+            background-color: $background-dark-1;
+        }
+    }
+}
